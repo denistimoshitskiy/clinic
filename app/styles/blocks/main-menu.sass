@@ -1,0 +1,26 @@
+.main-menu
+	list-style-type: none
+	padding-left: 0px
+	margin-bottom: 0px
+	display: flex
+	&__item
+		position: relative
+		margin-right: 30px
+		&:last-child
+			margin-right: 0
+		&::after
+			position: absolute
+			content: ''
+			bottom: -5px
+			left: 0
+			width: 0%
+			height: 2px
+			background-color: $black
+			transition: all 0.3s
+		&:hover::after 
+			width: 100%
+	&__link 
+		text-decoration: none
+		color: $black
+		&:hover 
+			color: $black

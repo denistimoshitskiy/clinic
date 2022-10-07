@@ -1,0 +1,26 @@
+<!--#set var="title" value="Экран авторизации" -->
+<!--#include virtual="/parts/header.html" -->
+
+<main>
+
+	<div class="authorization__wrapper">
+
+		<h1 class="authorization__heading">Вход в личный кабинет</h1>
+
+		<form class="authorization__form" action="" method="post">
+			<label class="input__label input__label--person" for="person-name">
+				<input class="input authorization__input" type="text" name="person-name" id="person-name"
+					placeholder="Имя сотрудника">
+			</label>
+			<label class="input__label input__label--password" for="person=password">
+				<input class="input authorization__input" type="password" name="person-password" id="person-password"
+					placeholder="Пароль">
+			</label>
+			<button class="button">Войти в кабинет</button>
+		</form>
+
+	</div>
+
+</main>
+
+<!--#include virtual="/parts/footer.html" -->

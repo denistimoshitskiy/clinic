@@ -1,0 +1,35 @@
+.table
+	border-radius: 10px
+	&__heading-row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 40px
+	&__heading
+		font-size: 20px
+		font-weight: 700
+		margin-bottom: 0
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 20px 40px
+		&:first-child
+			border-radius: 10px 10px 0px 0px
+		&:last-child
+			border-radius: 0px 0px 10px 10px
+		&--odd
+			background-color: white
+		&--even
+			background-color: #f9fafe
+	&__cell
+		&-caption
+			margin-bottom: 10px
+			font-size: 13px
+			color: rgba($black, 0.5)
+		&-content
+			margin-bottom: 0
+			&--success
+				color: $success
+			&--error
+				color: $error

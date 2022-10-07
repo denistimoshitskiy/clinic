@@ -17,11 +17,14 @@
 
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
-$fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
-$lineheight: 1.4 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
+$black: #333 
+$grey: #d2d2d2 
+$light-grey: #f2f5fc
+$success: #65c428
+$error: #dB3f10
+$fontsize: 15px // Body Font Size
+$lineheight: 1.5 // Document Line Height
+$userfont: circe, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -45,10 +48,8 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
 		src: url($furl) format('woff2')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('circe', normal, 400, '../fonts/Circe-Regular.woff2')
+@include font('circe', normal, 700, '../fonts/Circe-Bold.woff2')
 
 // GENERAL CSS SETTINGS
 
@@ -56,7 +57,7 @@ $gutter: $grid-gutter-width
 	color: #666
 
 ::selection
-	background-color: $accent
+	background-color: $black
 	color: #fff
 
 input, textarea
@@ -70,10 +71,11 @@ body
 	font-family: $userfont
 	font-size: $fontsize
 	line-height: $lineheight
-	color: $textcolor
+	color: $black
 	min-width: 320px
 	position: relative
 	overflow-x: hidden
+	background-color: $light-grey
 	h1, h2, h3, h4
 		line-height: $lineheight
 

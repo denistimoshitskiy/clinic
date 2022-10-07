@@ -1,0 +1,68 @@
+<!--#set var="title" value="Экран авторизации" -->
+<!--#include virtual="/parts/header.html" -->
+
+<!--#include virtual="/parts/main-header.html" -->
+
+<div class="row">
+
+	<div class="table__heading-row">
+
+		<h1 class="table__heading">Пациенты клиники</h1>
+
+		<form class="form-search" action="#" method="post">
+			<input type="text" name="input-search" id="input-search">
+			<button>Найти</button>
+		</form>
+
+		<a href="#" class="button table__add-row">+ Добавить пациента</a>
+
+	</div>
+
+	<div class="table">
+
+		<div class="table__row table__row--odd">
+			<div class="table__cell">
+				<span class="table__cell-caption">Фамилия Имя Отчество</span>
+				<p class="table__cell-content">Тимошицкий Денис Валерьевич</p>
+			</div>
+			<div class="table__cell">
+				<span class="table__cell-caption">Дата рождения</span>
+				<p class="table__cell-content">23.11.1993</p>
+			</div>
+			<div class="table__cell">
+				<span class="table__cell-caption">Последнее посещение</span>
+				<p class="table__cell-content">28.08.2022</p>
+			</div>
+			<div class="table__cell">
+				<span class="table__cell-caption">Статус</span>
+				<p class="table__cell-content table__cell-content--error">Ожидает записи</p>
+			</div>
+			<a href="#" class="button">Запись на прием</a>
+		</div>
+		<div class="table__row table__row--even">
+			<div class="table__cell">
+				<span class="table__cell-caption">Фамилия Имя Отчество</span>
+				<p class="table__cell-content">Тимошицкий Денис Валерьевич</p>
+			</div>
+			<div class="table__cell">
+				<span class="table__cell-caption">Дата рождения</span>
+				<p class="table__cell-content">23.11.1993</p>
+			</div>
+			<div class="table__cell">
+				<span class="table__cell-caption">Последнее посещение</span>
+				<p class="table__cell-content">28.08.2022</p>
+			</div>
+			<div class="table__cell">
+				<span class="table__cell-caption">Статус</span>
+				<p class="table__cell-content table__cell-content--success">Записан на 03.02.2023</p>
+			</div>
+			<a href="#" class="button">Запись на прием</a>
+		</div>
+
+	</div>
+
+</div>
+
+<!--#include virtual="/parts/main-footer.html" -->
+
+<!--#include virtual="/parts/footer.html" -->
