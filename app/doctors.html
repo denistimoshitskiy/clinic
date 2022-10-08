@@ -1,4 +1,4 @@
-<!--#set var="title" value="Экран авторизации" -->
+<!--#set var="title" value="Список врачей" -->
 <!--#include virtual="/parts/header.html" -->
 
 <!--#include virtual="/parts/main-header.html" -->
@@ -7,58 +7,69 @@
 
 	<div class="table__heading-row">
 
-		<h1 class="table__heading">Врачи клиники</h1>
+		<h1 class="heading--h1 table__heading">Врачи клиники</h1>
 
-		<a href="#" class="button table__add-row">+ Добавить врача</a>
+		<div class="table__buttons-wrapper">
+
+			<form class="form-search table__form-search" action="#" method="post">
+				<input class="input form-search__input " type="text" name="input-search" id="input-search"
+					placeholder="Имя врача">
+				<button class="button form-search__button">Найти</button>
+			</form>
+
+			<a href="#" class="button table__add-row">+ Добавить врача</a>
+
+		</div>
 
 	</div>
 
 	<div class="table">
 		<div class="table__row table__row--odd">
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-name">
 				<span class="table__cell-caption">Фамилия Имя Отчество</span>
 				<p class="table__cell-content">Тимошицкий Денис Валерьевич</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-speciality">
 				<span class="table__cell-caption">Специальность</span>
 				<p class="table__cell-content">Врач-ортопед</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-status">
 				<span class="table__cell-caption">Статус</span>
 				<p class="table__cell-content table__cell-content--success">Работает</p>
 			</div>
 			<a href="#" class="button">Запись на прием</a>
 		</div>
 		<div class="table__row table__row--even">
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-name">
 				<span class="table__cell-caption">Фамилия Имя Отчество</span>
 				<p class="table__cell-content">Тимошицкий Денис Валерьевич</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-speciality">
 				<span class="table__cell-caption">Специальность</span>
 				<p class="table__cell-content">Врач-ортопед</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-status">
 				<span class="table__cell-caption">Статус</span>
 				<p class="table__cell-content table__cell-content--success">Работает</p>
 			</div>
 			<a href="#" class="button">Запись на прием</a>
 		</div>
 		<div class="table__row table__row--odd">
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-name">
 				<span class="table__cell-caption">Фамилия Имя Отчество</span>
 				<p class="table__cell-content">Тимошицкий Денис Валерьевич</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-speciality">
 				<span class="table__cell-caption">Специальность</span>
 				<p class="table__cell-content">Врач-ортопед</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--doctors-status">
 				<span class="table__cell-caption">Статус</span>
 				<p class="table__cell-content table__cell-content--success">Работает</p>
 			</div>
 			<a href="#" class="button">Запись на прием</a>
 		</div>
+
 	</div>
 
 </div>

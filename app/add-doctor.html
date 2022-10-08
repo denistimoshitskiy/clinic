@@ -1,0 +1,102 @@
+<!--#set var="title" value="Экран авторизации" -->
+<!--#include virtual="/parts/header.html" -->
+
+<!--#include virtual="/parts/main-header.html" -->
+
+<div class="row">
+
+	<div class="col-9">
+		<h1 class="heading--h1 add-doctor__heading">Добавление нового врача</h1>
+
+
+		<form class="form-add-doctor" action="#" method="post">
+
+			<label class="form-add-doctor__label" for="doctor-name">
+				Фамилия Имя Отчество
+				<input class="input form-add-doctor__input" type="text" name="doctor-name" id="doctor-name"
+					placeholder="Иванов Иван Иванович" required>
+			</label>
+
+			<label class="form-add-doctor__label" for="speciality">
+				Специальность
+				<select class="input form-add-doctor__input" name="speciality" id="speciality">
+					<option value="1">Врач-ортопед</option>
+					<option value="2">Хирург</option>
+					<option value="3">Диетолог</option>
+				</select>
+			</label>
+
+			<label class="form-add-doctor__label" for="time-visit">
+				Время приема одного пациента
+				<input class="input form-add-doctor__input" type="number" name="time-visit" id="time-visit"
+					placeholder="В часах" required>
+			</label>
+
+			<h2 class="heading--h2 form-add-doctor__sub-heading">
+				График работы
+			</h2>
+
+			<div class="form-add-doctor__days-wrapper">
+
+				<fieldset class="form-add-doctor__schedule-day">
+					<legend class="form-add-doctor__day-week">Понедельник</legend>
+					<button class="form-add-doctor__fill-days">Заполнить на все дни</button>
+					<div class="form-add-doctor__inputs-wrapper">
+						<input class="input form-add-doctor__input-time" type="time" name="monday-start" id="monday-start">
+						<input class="input form-add-doctor__input-time" type="time" name="monday-end" id="monday-end">
+					</div>
+				</fieldset>
+
+				<fieldset class="form-add-doctor__schedule-day">
+					<legend class="form-add-doctor__day-week">Вторник</legend>
+					<div class="form-add-doctor__inputs-wrapper">
+						<input class="input form-add-doctor__input-time" type="time" name="tuesday-start" id="tuesday-start">
+						<input class="input form-add-doctor__input-time" type="time" name="tuesday-end" id="tuesday-end">
+					</div>
+				</fieldset>
+
+				<fieldset class="form-add-doctor__schedule-day">
+					<legend class="form-add-doctor__day-week">Среда</legend>
+					<div class="form-add-doctor__inputs-wrapper">
+						<input class="input form-add-doctor__input-time" type="time" name="wednesday-start" id="wednesday-start">
+						<input class="input form-add-doctor__input-time" type="time" name="wednesday-end" id="wednesday-end">
+					</div>
+				</fieldset>
+
+				<fieldset class="form-add-doctor__schedule-day">
+					<legend class="form-add-doctor__day-week">Четверг</legend>
+					<div class="form-add-doctor__inputs-wrapper">
+						<input class="input form-add-doctor__input-time" type="time" name="thursday-start" id="thursday-start">
+						<input class="input form-add-doctor__input-time" type="time" name="thursday-end" id="thursday-end">
+					</div>
+				</fieldset>
+
+				<fieldset class="form-add-doctor__schedule-day">
+					<legend class="form-add-doctor__day-week">Пятница</legend>
+					<div class="form-add-doctor__inputs-wrapper">
+						<input class="input form-add-doctor__input-time" type="time" name="friday-start" id="friday-start">
+						<input class="input form-add-doctor__input-time" type="time" name="friday-end" id="friday-end">
+					</div>
+				</fieldset>
+
+				<fieldset class="form-add-doctor__schedule-day">
+					<legend class="form-add-doctor__day-week">Суббота</legend>
+					<div class="form-add-doctor__inputs-wrapper">
+						<input class="input form-add-doctor__input-time" type="time" name="saturday-start" id="saturday-start">
+						<input class="input form-add-doctor__input-time" type="time" name="saturday-end" id="saturday-end">
+					</div>
+				</fieldset>
+
+			</div>
+
+			<button class="button">Добавить врача</button>
+
+		</form>
+
+	</div>
+
+</div>
+
+<!--#include virtual="/parts/main-footer.html" -->
+
+<!--#include virtual="/parts/footer.html" -->

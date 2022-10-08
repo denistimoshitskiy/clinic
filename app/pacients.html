@@ -1,4 +1,4 @@
-<!--#set var="title" value="Экран авторизации" -->
+<!--#set var="title" value="Список пациентов" -->
 <!--#include virtual="/parts/header.html" -->
 
 <!--#include virtual="/parts/main-header.html" -->
@@ -7,7 +7,7 @@
 
 	<div class="table__heading-row">
 
-		<h1 class="table__heading">Пациенты клиники</h1>
+		<h1 class="heading--h1 table__heading">Пациенты клиники</h1>
 
 		<div class="table__buttons-wrapper">
 
@@ -26,43 +26,44 @@
 	<div class="table">
 
 		<div class="table__row table__row--odd">
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-name">
 				<span class="table__cell-caption">Фамилия Имя Отчество</span>
 				<p class="table__cell-content">Тимошицкий Денис Валерьевич</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-birthday">
 				<span class="table__cell-caption">Дата рождения</span>
 				<p class="table__cell-content">23.11.1993</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-last-visit">
 				<span class="table__cell-caption">Последнее посещение</span>
 				<p class="table__cell-content">28.08.2022</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-status">
 				<span class="table__cell-caption">Статус</span>
 				<p class="table__cell-content table__cell-content--error">Ожидает записи</p>
 			</div>
 			<a href="#" class="button">Запись на прием</a>
 		</div>
 		<div class="table__row table__row--even">
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-name">
 				<span class="table__cell-caption">Фамилия Имя Отчество</span>
 				<p class="table__cell-content">Тимошицкий Денис Валерьевич</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-birthday">
 				<span class="table__cell-caption">Дата рождения</span>
 				<p class="table__cell-content">23.11.1993</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-last-visit">
 				<span class="table__cell-caption">Последнее посещение</span>
 				<p class="table__cell-content">28.08.2022</p>
 			</div>
-			<div class="table__cell">
+			<div class="table__cell table__cell--pacient-status">
 				<span class="table__cell-caption">Статус</span>
-				<p class="table__cell-content table__cell-content--success">Записан на 03.02.2023</p>
+				<p class="table__cell-content table__cell-content--error">Ожидает записи</p>
 			</div>
 			<a href="#" class="button">Запись на прием</a>
 		</div>
+
 
 	</div>
 
