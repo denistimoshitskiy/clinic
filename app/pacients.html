@@ -9,12 +9,17 @@
 
 		<h1 class="table__heading">Пациенты клиники</h1>
 
-		<form class="form-search" action="#" method="post">
-			<input type="text" name="input-search" id="input-search">
-			<button>Найти</button>
-		</form>
+		<div class="table__buttons-wrapper">
 
-		<a href="#" class="button table__add-row">+ Добавить пациента</a>
+			<form class="form-search table__form-search" action="#" method="post">
+				<input class="input form-search__input " type="text" name="input-search" id="input-search"
+					placeholder="Имя пациента">
+				<button class="button form-search__button">Найти</button>
+			</form>
+
+			<a href="#" class="button table__add-row">+ Добавить пациента</a>
+
+		</div>
 
 	</div>
 
