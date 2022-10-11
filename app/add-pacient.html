@@ -13,10 +13,10 @@
 			<label class="form__label form__label--person" for="pacient-name">
 				Фамилия Имя Отчество
 				<input class="input form__input form-add-pacient__input" type="text" name="pacient-name" id="pacient-name"
-					placeholder="Иванов Иван Иванович" required>
+					placeholder="Иванов Иван Иванович" pattern="[а-яёА-ЯЁ]*" required>
 			</label>
 
-			<label class="form__label form__label--calendar" for="pacient-birthday">
+			<label class="form__label" for="pacient-birthday">
 				Дата рождения
 				<input class="input form__input form-add-pacient__input" type="date" name="pacient-birthday"
 					id="pacient-birthday" required>
@@ -25,7 +25,8 @@
 			<label class="form__label" for="passport-data">
 				Паспортные данные
 				<input class="input form__input form-add-pacient__input form-add-pacient__input--passport" type="text"
-					name="passport-data" id="passport-data" placeholder="40 01 111 222 от 03.03.2003" required>
+					name="passport-data" id="passport-data" placeholder="40 01 111 222 от 03.03.2003" pattern="[а-яёА-ЯЁ]*"
+					required>
 			</label>
 
 			<label class="form__label" for="pacient-problems">

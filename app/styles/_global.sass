@@ -17,8 +17,8 @@
 
 // USER VARIABLES SECTION
 
-$black: #333 
-$grey: #d2d2d2 
+$black: #333
+$grey: #d2d2d2
 $light-grey: #f2f5fc
 $success: #65c428
 $error: #dB3f10
@@ -63,9 +63,9 @@ $gutter: $grid-gutter-width
 input, textarea
 	outline: none
 	&:focus:required:invalid
-		border-color: red
+		border-color: $error
 	&:required:valid
-		border-color: green
+		border-color: $success
 
 body
 	font-family: $userfont

@@ -13,8 +13,8 @@
 
 			<form class="form-search table__form-search" action="#" method="post">
 				<input class="input form-search__input " type="text" name="input-search" id="input-search"
-					placeholder="Имя пациента">
-				<button class="button form-search__button">Найти</button>
+					placeholder="Имя пациента" pattern="[а-яёА-ЯЁ]*" required>
+				<button class="button form-search__button" aria-label="Поиск по пациентам">Найти</button>
 			</form>
 
 			<a href="#" class="button table__add-row">+ Добавить пациента</a>
