@@ -1,7 +1,8 @@
 .form
-	display: flex
-	justify-content: space-between
-	flex-wrap: wrap
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
 	&__label
 		position: relative
 		font-size: 13px
@@ -26,12 +27,15 @@
 				background-image: url(../images/dist/icons/arrow.svg)
 		&--time
 			&::after
-				top: 45px
 				background-image: url(../images/dist/icons/time.svg)
 		&--calendar
 			&::after
-				top: 45px
 				background-image: url(../images/dist/icons/calendar.svg)
+		&--passport
+			&::after
+				top: 45px
+				right: 50px
+				background-image: url(../images/dist/icons/passport.svg)
 	&__input
 		display: block
 		margin-top: 15px

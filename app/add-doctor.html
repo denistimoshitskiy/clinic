@@ -11,26 +11,30 @@
 
 		<form class="form form-add-doctor" action="#" method="post">
 
-			<label class="form__label form-add-doctor__label form__label--person" for="doctor-name">
-				Фамилия Имя Отчество
-				<input class="input form__input form-add-doctor__input" type="text" name="doctor-name" id="doctor-name"
-					placeholder="Иванов Иван Иванович" pattern="[а-яёА-ЯЁ]*" required>
-			</label>
+			<div class="form__row">
 
-			<label class="form__label form-add-doctor__label form__label--arrow" for="speciality">
-				Специальность
-				<select class="input form__input form-add-doctor__input form__select" name="speciality" id="speciality">
-					<option value="1">Врач-ортопед</option>
-					<option value="2">Хирург</option>
-					<option value="3">Диетолог</option>
-				</select>
-			</label>
+				<label class="form__label form-add-doctor__label form__label--person" for="doctor-name">
+					Фамилия Имя Отчество
+					<input class="input form__input form-add-doctor__input" type="text" name="doctor-name" id="doctor-name"
+						placeholder="Иванов Иван Иванович" pattern="[а-яёА-ЯЁ]*" required>
+				</label>
 
-			<label class="form__label form-add-doctor__label form__label--time" for="time-visit">
-				Время приема одного пациента
-				<input class="input form__input form-add-doctor__input" type="number" name="time-visit" id="time-visit"
-					placeholder="В часах" required>
-			</label>
+				<label class="form__label form-add-doctor__label form__label--arrow" for="speciality">
+					Специальность
+					<select class="input form__input form-add-doctor__input form__select" name="speciality" id="speciality">
+						<option value="1">Врач-ортопед</option>
+						<option value="2">Хирург</option>
+						<option value="3">Диетолог</option>
+					</select>
+				</label>
+
+				<label class="form__label form-add-doctor__label form__label--time" for="time-visit">
+					Время приема одного пациента
+					<input class="input form__input form-add-doctor__input" type="number" name="time-visit" id="time-visit"
+						placeholder="В часах" required>
+				</label>
+				
+			</div>
 
 			<h2 class="heading--h2 form-add-doctor__sub-heading">
 				График работы

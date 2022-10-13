@@ -10,37 +10,45 @@
 
 		<form class="form form-add-pacient" action="#" method="post">
 
-			<label class="form__label form__label--person" for="pacient-name">
-				Фамилия Имя Отчество
-				<input class="input form__input form-add-pacient__input" type="text" name="pacient-name" id="pacient-name"
-					placeholder="Иванов Иван Иванович" pattern="[а-яёА-ЯЁ]*" required>
-			</label>
+			<div class="form__row">
 
-			<label class="form__label" for="pacient-birthday">
-				Дата рождения
-				<input class="input form__input form-add-pacient__input" type="date" name="pacient-birthday"
-					id="pacient-birthday" required>
-			</label>
+				<label class="form__label form__label--person" for="pacient-name">
+					Фамилия Имя Отчество
+					<input class="input form__input form-add-pacient__input" type="text" name="pacient-name" id="pacient-name"
+						placeholder="Иванов Иван Иванович" pattern="[а-яёА-ЯЁ]*" required>
+				</label>
 
-			<label class="form__label" for="passport-data">
-				Паспортные данные
-				<input class="input form__input form-add-pacient__input form-add-pacient__input--passport" type="text"
-					name="passport-data" id="passport-data" placeholder="40 01 111 222 от 03.03.2003" pattern="[а-яёА-ЯЁ]*"
-					required>
-			</label>
+				<label class="form__label" for="pacient-birthday">
+					Дата рождения
+					<input class="input form__input form-add-pacient__input" type="date" name="pacient-birthday"
+						id="pacient-birthday" required>
+				</label>
 
-			<label class="form__label" for="pacient-problems">
-				Жалобы
-				<textarea class="input form__input form-add-pacient__input form-add-pacient__textarea" name="pacient-problems"
-					id="pacient-problems" cols="30" rows="10" placeholder="Острая боль в спине" required></textarea>
-			</label>
+				<label class="form__label form__label--passport" for="passport-data">
+					Паспортные данные
+					<input class="input form__input form-add-pacient__input form-add-pacient__input--passport" type="text"
+						name="passport-data" id="passport-data" placeholder="40 01 111 222 от 03.03.2003" pattern="[а-яёА-ЯЁ]*"
+						required>
+				</label>
+			</div>
 
-			<label class="form__label" for="pacient-diagnosis">
-				Диагноз
-				<textarea class="input form__input form-add-pacient__input form-add-pacient__textarea" name="pacient-diagnosis"
-					id="pacient-diagnosis" cols="30" rows="10"
-					placeholder="Грижа с позвонках L1-L5 - рекомендовано консервативное лечение" required></textarea>
-			</label>
+			<div class="form__row">
+
+				<label class="form__label" for="pacient-problems">
+					Жалобы
+					<textarea class="input form__input form-add-pacient__input form-add-pacient__textarea" name="pacient-problems"
+						id="pacient-problems" cols="30" rows="10" placeholder="Острая боль в спине" required></textarea>
+				</label>
+
+				<label class="form__label" for="pacient-diagnosis">
+					Диагноз
+					<textarea class="input form__input form-add-pacient__input form-add-pacient__textarea"
+						name="pacient-diagnosis" id="pacient-diagnosis" cols="30" rows="10"
+						placeholder="Грижа с позвонках L1-L5 - рекомендовано консервативное лечение" required></textarea>
+				</label>
+			</div>
+
+			<button class="button">Добавить пациента</button>
 
 		</form>
 
